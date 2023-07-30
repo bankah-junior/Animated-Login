@@ -1,0 +1,102 @@
+* {
+    overflow-x: hidden;
+}
+
+body {
+    background: url('../img/background-img.jpg'), rgba(0, 0, 0, 1.0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.flash-container {
+    z-index: 99;
+    left: 100%;
+    animation: flashLeftToRight 6s linear alternate;
+}
+
+@keyframes flashLeftToRight {
+    from {
+        left: 0;
+        right: 100%;
+    }
+
+    to {
+        left: 100%;
+        right: 0;
+    }
+}
+
+input:active,
+input:focus,
+input {
+    outline: 0;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    animation-name: slideInUp1;
+    animation-duration: 4s;
+}
+
+.text2 {
+    animation-name: slideInUp2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.text3 {
+    animation-name: slideInUp3;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.text4 {
+    animation-name: slideInUp4;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+
+@keyframes slideInUp1 {
+    from {
+        transform: translateX(60rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp2 {
+    from {
+        transform: translateX(65rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp3 {
+    from {
+        transform: translateX(70rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp4 {
+    from {
+        transform: translateX(75rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+  
